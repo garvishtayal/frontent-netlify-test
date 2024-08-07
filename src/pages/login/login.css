@@ -1,0 +1,131 @@
+.login-container {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.img-container {
+  border-radius: 15px;
+  background-image: url('/login-bg.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 550px;
+}
+
+.login-content-container {
+	width: 60%;
+	height: 80%;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.set-blend{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  position: relative;
+  mix-blend-mode: hard-light;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.hole {
+  position: absolute;
+	width: 88%;
+	height: 75px;
+  bottom: 20px;
+  left: 20px;
+	border-radius: 10px;
+	background-color: gray;
+}
+
+.unset-blend {
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.unset-blend form {
+  display: flex;
+  flex-direction: column;
+}
+
+.unset-blend input {
+  border: none;
+  border-bottom: solid 1px lightgray;
+  outline: none;
+  color: rgba(0, 0, 0, 0.897);
+  font-family: 'Poppins';
+  font-size: 0.74rem;
+  width: 40%;
+  transition: all 0.4s ease-in-out;
+}
+.unset-blend input:focus {
+  width: 100%;
+  border-bottom: solid 1px gray;
+}
+
+.unset-blend span {
+  font-size: 0.7rem;
+  color: gray;
+  margin-top: 10px;
+}
+
+.unset-blend button, .unset-blend .submit-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 0px;
+  height: 30px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  margin-top: 5px;
+}
+
+.unset-blend .submit-button:hover {
+  background-color: black;
+}
+
+.unset-blend .captcha-forgot-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.unset-blend .captcha-forgot-container p {
+  font-size: 0.6rem;
+  color: gray;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.unset-blend .captcha-forgot-container p:hover {
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.unset-blend .recaptcha {
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  width: 60%;
+}
+
+.unset-blend .redirect-element:hover, .forgot-link:hover {
+  text-decoration: underline;
+}
